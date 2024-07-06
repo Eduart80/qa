@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="questions.css"/>
+</head>
+<body>
+    <div class="container">
+        <h5>General QA Automation Questions</h5>
+        <a href="#Fundamentals" class="btn btn-primary" data-toggle="collapse">Fundamentals</a>
+        <div id="Fundamentals" class="collapse">
+            <div id="accordion">
+                <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseQA">
+                        What is QA automation testing, and why is it important?
+                        </a>
+                </div>
+                <div id="collapseQA" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        QA automation testing is a process where automated tools and scripts are used to perform software testing tasks that would otherwise be done manually. It involves creating test scripts that can run repeatedly and verify the correctness of the software by comparing the actual results with the expected outcomes.
+                        Automation testing is important because it:<br>
+                        Increases Efficiency: Automated tests can be run faster and more frequently than manual tests, allowing for quicker feedback and faster release cycles.
+                        <br>Enhances Accuracy: Automation reduces the risk of human error that can occur during manual testing, leading to more reliable results.
+                        <br>Improves Coverage: Automated tests can cover more scenarios and edge cases than manual testing, ensuring a more thorough examination of the software.
+                        <br>Saves Time and Cost: Although there is an initial investment in creating automated tests, it saves time and reduces costs in the long run by minimizing the need for repetitive manual testing.
+                        <br>Supports Continuous Integration/Continuous Deployment (CI/CD): Automation is essential for integrating testing into CI/CD pipelines, enabling continuous delivery of high-quality software
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapsediff">
+                        What are the differences between manual testing and automated testing?
+                        </a>
+                </div>
+                <div id="collapsediff" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        Manual testing and automated testing are two different approaches to software testing, each with its own advantages and disadvantages.
+                       <br><strong> Manual Testing:</strong><br>
+                        1.	Human Intervention: Involves testers manually executing test cases without the use of automation tools.
+                        2.	Flexibility: Allows for exploratory testing and ad-hoc test case execution based on tester's intuition and experience.
+                        3.	Initial Cost: Requires minimal initial investment since no specialized tools or scripts are needed.
+                        4.	Time-Consuming: Can be slower as each test case needs to be executed individually by a tester.
+                        5.	Error-Prone: Higher risk of human error, such as missing steps or incorrectly recording results.
+                        <br><strong>Automated Testing:</strong><br>
+                        1.	Tool-Driven: Uses automation tools and scripts to execute test cases without human intervention.
+                        2.	Consistency: Provides consistent results as the same tests are run in the same way every time.
+                        3.	Initial Investment: Requires an initial investment of time and resources to develop and maintain automation scripts.
+                        4.	Speed: Much faster as tests can be executed simultaneously and repeatedly, allowing for quicker feedback.
+                        5.	Reliability: Reduces the risk of human error, ensuring more accurate and reliable test results.
+                        6.	Coverage: Can cover more test scenarios, including edge cases, that might be impractical to test manually.
+                        <br><strong>Key Differences:</strong><br>
+                        •	Execution: Manual tests are performed by humans, while automated tests are run by tools.
+                        •	Efficiency: Automated testing is generally faster and more efficient for repetitive tasks.
+                        •	Flexibility: Manual testing allows for more exploratory and intuitive testing.
+                        •	Cost: Automated testing has a higher initial setup cost but can save time and money in the long run.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseSTLC">
+                        Can you explain the software testing life cycle (STLC) and where automation fits in?
+                        </a>
+                </div>
+                <div id="collapseSTLC" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        The Software Testing Life Cycle (STLC) is a sequence of specific activities conducted during the testing process to ensure software quality. Each phase in the STLC has specific deliverables and objectives.
+                        Phases of STLC:
+                        <br><strong>1.	Requirement Analysis:</strong><br>
+                        o	Objective: Understand the testing requirements from a quality assurance perspective.
+                       <br> o	Activities: Identify testable requirements, consult with stakeholders, and prepare the Requirement Traceability Matrix (RTM).
+                       <br>o	Automation Fit: Evaluate requirements to determine which can be automated.
+                        <br><strong>2.	Test Planning:</strong><br>
+                        o	Objective: Define the strategy and approach for testing.
+                        <br>o	Activities: Develop the test plan, determine resources, estimate effort, and schedule testing activities.
+                        <br>o	Automation Fit: Plan for automation, select appropriate tools, and identify the scope of automation.
+                        <br><strong>3.	Test Case Development:</strong><br>
+                        o	Objective: Create detailed test cases and scripts.
+                        <br>o	Activities: Write and review test cases, create test data, and develop automation scripts.
+                        <br>o	Automation Fit: Develop and review automated test scripts.
+                        <br><strong>4.	Test Environment Setup:</strong><br>
+                        o	Objective: Prepare the environment where tests will be executed.
+                        <br>o	Activities: Configure hardware and software, set up test data, and ensure the test environment is ready.
+                        <br>o	Automation Fit: Ensure the test environment supports the execution of automated tests.
+                        <br><strong> 5.	Test Execution:</strong><br>
+                        o	Objective: Execute the test cases and record the results.
+                        <br>o	Activities: Execute manual and automated tests, log defects, and retest as needed.
+                        <br>o	Automation Fit: Run automated test scripts, generate reports, and log any defects found.
+                        <br><strong>6.	Test Cycle Closure:</strong><br>
+                        o	Objective: Evaluate the test cycle and learn from it.
+                        <br>o	Activities: Assess test coverage, document lessons learned, prepare test metrics, and discuss improvements.
+                        <br>o	Automation Fit: Review the effectiveness of automation, update scripts based on feedback, and plan for future enhancements.
+                        <br><strong>Where Automation Fits in STLC:</strong><br>
+                        •	Requirement Analysis: Identify testable requirements suitable for automation.
+                        •	Test Planning: Determine the scope of automation and select tools.
+                        •	Test Case Development: Create and review automated test scripts.
+                        •	Test Environment Setup: Ensure the environment supports automation tools and scripts.
+                        •	Test Execution: Run automated tests to increase efficiency and coverage.
+                        •	Test Cycle Closure: Review and refine automation strategies and scripts for future cycles.
+                        Automation is integral to the STLC as it helps in increasing efficiency, reducing human error, and providing quicker feedback throughout the testing process.
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <a href="#Tools" class="btn btn-primary" data-toggle="collapse">Tools and Technologies</a>
+        <div id="Tools" class="collapse">
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseSel">
+                            What automation tools are you familiar with (e.g., Selenium, QTP, Appium, JUnit, TestNG)?
+                        </a>
+                    </div>
+                    <div id="collapseSel" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            I am familiar with several automation tools, including Selenium, TestNG, and JUnit.
+                            <br><strong>Selenium:</strong><br>
+                            Selenium is a widely used open-source tool for automating web browsers. It supports multiple programming languages such as Java, C#, Python, and JavaScript. With Selenium WebDriver, I can create robust and maintainable automated tests for web applications. I have used Selenium to perform cross-browser testing and ensure compatibility across different browsers.
+                            <br><strong>TestNG:</strong><br>
+                            TestNG is a testing framework inspired by JUnit and NUnit but introduces new functionalities that make it more powerful and easier to use. I have used TestNG for test configuration, including setting up before and after methods, grouping tests, and parameterizing tests. TestNG also provides excellent support for running tests in parallel, which helps in reducing the overall test execution time.
+                            <br><strong>JUnit:</strong><br>
+                            JUnit is a popular testing framework for Java applications. I have experience using JUnit to write unit tests, perform assertions, and execute tests as part of the development process. JUnit's integration with build tools like Maven and Gradle makes it easy to include automated tests in the build pipeline, ensuring that code changes are thoroughly tested before being merged.
+                            </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapsediff">
+                            How do you decide which automation tool to use for a specific project?
+                        </a>
+                    </div>
+                    <div id="collapsediff" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            I consider factors like the type of application (web, mobile, desktop), the programming languages and frameworks used, 
+                            the team's expertise, tool integration capabilities, and budget constraints.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseSTLC">
+                            Can you explain the setup and configuration process for your preferred automation tool?
+                        </a>
+                    </div>
+                    <div id="collapseSTLC" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            For Selenium with Java, I install the Selenium WebDriver and a browser driver (e.g., ChromeDriver), 
+                            set up a testing framework like Cucumber and TestNG or JUnit, and configure build tools like Maven for dependency management. 
+                            Setup POM design for more reusability, scalability and maintenance 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#Frameworks" class="btn btn-primary" data-toggle="collapse">Frameworks</a>
+        <div id="Frameworks" class="collapse">
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapsefram">
+                            What are the different types of test automation frameworks?
+                        </a>
+                    </div>
+                    <div id="collapsefram" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            Common types include modular, data-driven (DDT), keyword-driven, hybrid, and behavior-driven development (BDD) frameworks.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapsedev">
+                            Describe a test automation framework you have developed or worked with.
+                        </a>
+                    </div>
+                    <div id="collapsedev" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                        I worked with a BDD and DDT, utilizing Selenium, Cucumber, TestNG, Apache POI for data handling.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapsedata">
+                            How do you manage test data and test environment in your framework?
+                        </a>
+                    </div>
+                    <div id="collapsedata" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            I use external files (e.g., Excel, CSV) for test data and environment-specific configuration 
+                            files or environment variables to manage different test environments.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#Script" class="btn btn-primary" data-toggle="collapse">Scripting and Programming</a>
+        <div id="Script" class="collapse">
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseScript">
+                            Which programming languages are you proficient in for writing automation scripts?
+                        </a>
+                    </div>
+                    <div id="collapseScript" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            I am proficient in Java, and JavaScript for writing automation scripts.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseappl">
+                            Can you write a simple script to log into a web application using Selenium?
+                        </a>
+                    </div>
+                    <div id="collapseappl" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            java<br>
+                            WebDriver driver = new ChromeDriver();<br>
+                            driver.get("http://example.com/login");<br>
+                            driver.findElement(By.id("username")).sendKeys("myUsername");<br>
+                            driver.findElement(By.id("password")).sendKeys("myPassword");<br>
+                            driver.findElement(By.id("loginButton")).click();<br>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#exceptions">
+                            How do you handle exceptions and errors in your automation scripts?
+                        </a>
+                    </div>
+                    <div id="exceptions" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            I use try-catch blocks to handle exceptions and implement logging to capture error details. Additionally, 
+                            I use assertions to verify expected outcomes.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#final">
+                            What is the difference between Final vs Finally?
+                        </a>
+                    </div>
+                    <div id="final" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <strong>Final</strong> is value that can not be change: 
+                            <br><strong> Variable:</strong>
+                            A final variable's value cannot be changed once initialized. It makes the variable a constant.
+                            <i style="text-decoration: underline;"> final int</i> MAX_VALUE = 100;
+                            <br><strong>Method:</strong><br>
+                            A final method cannot be overridden by subclasses.
+                            class Parent {
+                                <i style="text-decoration: underline;">  public final void</i> display() {
+                                    System.out.println("This is a final method.");
+                                }
+                            }
+                            <br><strong>Class:</strong><br>
+                            A final class cannot be subclassed.
+                            <i style="text-decoration: underline;"> final class</i> MyClass {
+                                // Class code
+                            }<br>
+                            <br><strong> Finally</strong> block is used in exception handling to execute code that must run regardless of whether an exception was caught or not.
+                             It is typically used for cleanup activities like closing resources.
+                            <br>try {
+                                // Code that may throw an exception
+                            } <br>catch (Exception e) {
+                                // Exception handling code
+                            } <br><i style="text-decoration: underline;"> finally</i> {
+                                // Cleanup code, always executes
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h5>Advanced QA Automation Questions</h5>
+        <a href="#Advanced" class="btn btn-primary" data-toggle="collapse">Test Design</a>
+        <div id="Advanced" class="collapse">
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseAdvanced">
+                            How do you design test cases for automation?
+                        </a>
+                    </div>
+                    <div id="collapseAdvanced" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            I identify repetitive and high-risk test cases, create clear and concise test steps, 
+                            and ensure they are independent and reusable.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapsestrat">
+                            What strategies do you use for test case prioritization?
+                        </a>
+                    </div>
+                    <div id="collapsestrat" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            I prioritize based on risk, impact, and critical functionality, ensuring high-priority and high-risk areas are tested first.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapsemaint">
+                            How do you ensure the maintainability of your test scripts?
+                        </a>
+                    </div>
+                    <div id="collapsemaint" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            I use modular and reusable code, keep tests independent, implement robust error handling, 
+                            and regularly review and refactor scripts.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#cicd" class="btn btn-primary" data-toggle="collapse">Continuous Integration/Continuous Deployment (CI/CD)</a>
+        <div id="cicd" class="collapse">
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapsecicd">
+                            What is CI/CD, and how does automation testing integrate with CI/CD pipelines?
+                        </a>
+                    </div>
+                    <div id="collapsecicd" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            CI/CD is a practice that automates the integration and deployment of code changes. 
+                            Automation testing is integrated into CI/CD pipelines to run tests automatically on code changes, 
+                            ensuring quality and preventing regressions.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseJenk">
+                            Which CI/CD tools have you used (e.g., Jenkins, Bamboo, CircleCI)?
+                        </a>
+                    </div>
+                    <div id="collapseJenk" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            I used Jenkins, and GitHub Action
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapsepipe">
+                            How do you set up automated tests to run in a CI/CD pipeline?
+                        </a>
+                    </div>
+                    <div id="collapsepipe" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            I configure the CI tool to trigger automated tests on code commits on push, set up build jobs to execute my test scripts, 
+                            and configure reports for test results.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#idManag" class="btn btn-primary" data-toggle="collapse">Test Management</a>
+        <div id="idManag" class="collapse">
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapsemanage">
+                            How do you manage and organize your test cases and test scripts?
+                        </a>
+                    </div>
+                    <div id="collapsemanage" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            I use test management tools like TestRail or JIRA, organize test cases based on features/modules, 
+                            and use version control systems like Git for scripts
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapsemetrics">
+                            What metrics do you use to measure the effectiveness of your automated tests?
+                        </a>
+                    </div>
+                    <div id="collapsemetrics" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            ... text area
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapsesituation">
+                            Can you describe a situation where automated testing significantly improved your testing process?
+                        </a>
+                    </div>
+                    <div id="collapsesituation" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            ... text area
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h5>Scenario-Based Questions</h5>
+        <a href="#idReal" class="btn btn-primary" data-toggle="collapse">Real-World Scenarios</a>
+        <div id="idReal" class="collapse">
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseDescribe">
+                            Describe a challenging bug you found using automation and how you resolved it.
+                        </a>
+                    </div>
+                    <div id="collapseDescribe" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            ... text area
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapsesuite">
+                            How do you handle flaky tests in your automation suite?
+                        </a>
+                    </div>
+                    <div id="collapsesuite" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            ... text area
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseproject">
+                            Explain a situation where automation testing saved time and resources in your project.
+                        </a>
+                    </div>
+                    <div id="collapseproject" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            ... text area
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#idProblem" class="btn btn-primary" data-toggle="collapse">Problem-Solving</a>
+        <div id="idProblem" class="collapse">
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapsescratch">
+                            Given a new feature, how would you approach automating its tests from scratch?
+                        </a>
+                    </div>
+                    <div id="collapsescratch" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            ... text area
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseapplicat">
+                            How do you ensure your automation scripts are robust and can handle changes in the application?
+                        </a>
+                    </div>
+                    <div id="collapseapplicat" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            ... text area
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseunexp">
+                            What steps do you take when an automated test fails unexpectedly?
+                        </a>
+                    </div>
+                    <div id="collapseunexp" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            ... text area
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h5>Behavioral Questions</h5>
+        <a href="#idTeam" class="btn btn-primary" data-toggle="collapse">Team Collaboration</a>
+        <div id="idTeam" class="collapse">
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapsecollaborat">
+                            How do you collaborate with developers, QA team members, and other stakeholders during the testing process?
+                        </a>
+                    </div>
+                    <div id="collapsecollaborat" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            ... text area
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapserole">
+                            Can you provide an example of a successful project where your automation testing played a critical role?
+                        </a>
+                    </div>
+                    <div id="collapserole" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            ... text area
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapsetools">
+                            How do you handle disagreements within the team regarding testing strategies or tools?
+                        </a>
+                    </div>
+                    <div id="collapsetools" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            ... text area
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#idLearn" class="btn btn-primary" data-toggle="collapse">Continuous Learning</a>
+        <div id="idLearn" class="collapse">
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseWQA">
+                           How do you stay updated with the latest trends and advancements in QA automation?
+                        </a>
+                    </div>
+                    <div id="collapseWQA" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            ... text area
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseartic">
+                            Have you contributed to any open-source automation projects or written articles on automation testing?
+                        </a>
+                    </div>
+                    <div id="collapseartic" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            ... text area
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseenhance">
+                            What certifications or training have you pursued to enhance your automation skills?
+                        </a>
+                    </div>
+                    <div id="collapseenhance" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            ... text area
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h5>Wrap-Up Questions</h5>
+        <a href="#id" class="btn btn-primary" data-toggle="collapse">Self-Assessment</a>
+        <div id="id" class="collapse">
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseWhat">
+                            What do you consider your biggest strengths as a QA automation tester?
+                        </a>
+                    </div>
+                    <div id="collapseWhat" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            ... text area
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseimprove">
+                            What areas do you feel you need to improve or learn more about in QA automation?
+                        </a>
+                    </div>
+                    <div id="collapseimprove" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            ... text area
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapsecompany">
+                            Why do you want to work in QA automation for our company?
+                        </a>
+                    </div>
+                    <div id="collapsecompany" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            ... text area
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
